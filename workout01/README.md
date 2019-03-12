@@ -9,3 +9,4 @@ Private Repository for HW assignments of Stat 133 (Spring 2019)
 - GSI: Colin Kou
 
 -----
+This is readme file for workout01
