@@ -1,9 +1,9 @@
-
+---
 #title: 'make shots charts script'
 #discription: This script makes charts of five players' shot data. 
-#input(s): ...
-#output(s): ...
-
+#input(s): shot data of five players, jpg of nba court
+#output(s): short charts for five players individually (PDF) and short charts of them in one picutre (PDF& PNG) 
+---
   
 library(jpeg)
 
@@ -11,11 +11,8 @@ library(grid)
 
 library(ggplot2)
 
-#curry
-# scatterplot
-curry_scatterplot = ggplot(data = curry) +
-  geom_point(aes(x = x, y = y, color = shot_made_flag))
-curry_scatterplot
+
+
   
 court_file = "../images/nba-court.jpg"
   
@@ -28,6 +25,7 @@ court_image = rasterGrob(
   
 
 # shot chart with court background
+#curry
 pdf(file = '../images/stephen-curry-shot-chart.pdf',width = 6.5, height = 5)
 ggplot(data = curry) +
   annotation_custom(court_image, -250, 250, -50, 420) +
@@ -39,13 +37,6 @@ dev.off()
 
 #durant
 
-# scatterplot
-durant_scatterplot = ggplot(data = durant) +
-  geom_point(aes(x = x, y = y, color = shot_made_flag))
-durant_scatterplot
-
-
-# shot chart with court background
 pdf(file = '../images/kevin-durant-shot-chart.pdf',width = 6.5, height = 5)
 ggplot(data = durant) +
   annotation_custom(court_image, -250, 250, -50, 420) +
@@ -56,13 +47,7 @@ ggplot(data = durant) +
 dev.off()
 
 #green
-# scatterplot
-green_scatterplot = ggplot(data = green) +
-  geom_point(aes(x = x, y = y, color = shot_made_flag))
-green_scatterplot
 
-
-# shot chart with court background
 pdf(file = '../images/draymond-green-shot-chart.pdf',width = 6.5, height = 5)
 ggplot(data = green) +
   annotation_custom(court_image, -250, 250, -50, 420) +
@@ -74,10 +59,6 @@ dev.off()
 
 
 #iguodala
-iguodala_scatterplot = ggplot(data = iguodala) +
-  geom_point(aes(x = x, y = y, color = shot_made_flag))
-
-
 # shot chart with court background
 pdf(file = '../images/andre-iguodala-shot-chart.pdf',width = 6.5, height = 5)
 ggplot(data = iguodala) +
@@ -90,11 +71,6 @@ dev.off()
 
 
 #thompson
-thompson_scatterplot = ggplot(data = thompson) +
-  geom_point(aes(x = x, y = y, color = shot_made_flag))
-
-
-# shot chart with court background
 pdf(file = '../images/klay-thompson-shot-chart.pdf',width = 6.5, height = 5)
 ggplot(data = thompson) +
   annotation_custom(court_image, -250, 250, -50, 420) +
@@ -106,8 +82,10 @@ dev.off()
 
 
 
-five_player = read.csv(file = '../data/shots-data.csv')
+
 #4.2) Facetted Shot Chart
+
+five_player = read.csv(file = '../data/shots-data.csv')
 pdf(file = '../images/gsw-shot-charts.pdf',width = 8, height = 7)
 ggplot(data = five_player) +
   annotation_custom(court_image, -250, 250, -50, 420) +
