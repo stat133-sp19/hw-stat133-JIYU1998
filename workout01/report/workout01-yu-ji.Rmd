@@ -22,7 +22,8 @@ How to win a basketball game? The most obvious answer is to earn more scores. Th
 In a basketball game, one of the most exciting moments is when the player jumps up and throws the ball. At that moment, all of the audience hold breath and fix their eyes on it. Of course, whether the players make the shot or not affects the final result of the game. Moreover, sometimes a single shot in the last few seconds turns out to be the game-changer. Many reasons can explian why the shooting performance of players matters significantly to a team. In order to win a game, excellent shooting skills is one of the indispensable factors. So now, by looking at the statistical data of five players of GSW, we want to analyze their shooting ability to make the training more efficient.
 
 ## Data
-Data are shooting statistics of five players, Stephen Curry, Klay Thompson, Kevin Durant, Draymond Green and Andre Iguodala. Time period is from 2016 to 2017. Each line of the dataset contains the information for a shot.
+Data are shooting statistics of five players, Stephen Curry, Klay Thompson, Kevin Durant, Draymond Green and Andre Iguodala, with certain manipulation. Time is from 2016 to 2017. Each line of the dataset contains the detailed information for a shot. (For more information, check folder data.)
+
 
 
 ## Analysis
@@ -72,7 +73,7 @@ From the table, we can see that of the 2091 effective shots, Stephen Curry and K
 
 
 ### Individual shooting performance	
-Players with lower accuracy in making effective shots should work on that aspect and enhance their scoring ability, since it¡¯s always pitiful to make a shot against all opponents but miss it.
+Players with lower accuracy in making effective shots should work on that aspect and enhance their scoring ability, since it is always pitiful to make a shot against all opponents but miss it. Therefore, before making any training plan or game strategy, it is necessary to look at their individual shooting ability.
 
 
 ```{r echo=FALSE, comment=''}
@@ -104,9 +105,7 @@ arrange(summarise(
 
 ```
 
-To be more specific, in terms of 2-point shooting, Iguodala and Durant are far ahead of their counterparts in making scores,  although Iguodala had the least 2-point shots. So if there is anything else to work with, maybe Iguodala should try to find more scoring chance under the premise that he has already fulfilled his duties for his position, or other teammates can pass the ball to him to score the 2-point if possible.
-
-
+To be more specific, in terms of 2-point shooting, Iguodala and Durant are far ahead of their counterparts in making scores, although Iguodala had the least 2-point shots. So if there is anything else to work with, maybe Iguodala should try to find more scoring chance under the premise that he has already fulfilled his duties for his position, or other teammates can pass the ball to him to score the 2-point if possible. While Stephen Curry and Klay Thompson are on the middle level in the team.
 
 
 ```{r echo=FALSE, comment=''}
@@ -121,7 +120,7 @@ arrange(summarise(
           ), desc(perc_made))
 
 ```
-Here comes the most valuable score, 3-point goals, which is expected to have lower accuracy for all players on average, taking the degree of difficulty into account. Admirably, Thompson and Curry got the first two places both in number of shots and percentage of success, which is a good illustration that they have fulfilled their duties as point guard and shooting guard. Green has noticeable weakness in making effective scores, probably because he is a power forward whose main duty is to defend against opponents. Maybe sometimes he took a shot, not aiming to score but to pass the ball to his teammates. Otherwise, it is advisable that he work on both the skills of defense and scoring to reduce mistakes, or he is suggested to pass the ball to more skilled teammates if the situation permits.
+Here comes the most valuable score, 3-point goals, which is expected to have lower accuracy for all players on average, taking the degree of difficulty into account. Admirably, Thompson and Curry got the first two places both in number of shots and percentage of success, which is a good illustration that they have fulfilled their duties as point guard and shooting guard. Green has noticeable weakness in making effective scores, probably because he is a power forward whose main duty is to defend against opponents. Maybe sometimes he took a shot, not aiming to score but to pass the ball to his teammates. Otherwise, it is advisable that he work on both the skills of defense and scoring to reduce mistakes, or he is suggested to pass the ball to teammates that are more skilled if the situation permits.
 
 ## Conclusion
 Based on the analysis above, in order to win the game, every player has to fulfill their own duties and try to score more points. Besides, each player should know exactly what the strengths and weakness are for both themselves and their teammates to better cooperate as a whole. If they analyze carefully and make the training plan and game strategy accordingly, they will improve the possibility of winning!

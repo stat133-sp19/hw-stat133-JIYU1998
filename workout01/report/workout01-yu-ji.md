@@ -18,7 +18,7 @@ In a basketball game, one of the most exciting moments is when the player jumps 
 Data
 ----
 
-Data are shooting statistics of five players, Stephen Curry, Klay Thompson, Kevin Durant, Draymond Green and Andre Iguodala. Time period is from 2016 to 2017. Each line of the dataset contains the information for a shot.
+Data are shooting statistics of five players, Stephen Curry, Klay Thompson, Kevin Durant, Draymond Green and Andre Iguodala, with certain manipulation. Time is from 2016 to 2017. Each line of the dataset contains the detailed information for a shot. (For more information, check folder data.)
 
 Analysis
 --------
@@ -50,7 +50,7 @@ From the table, we can see that of the 2091 effective shots, Stephen Curry and K
 
 ### Individual shooting performance
 
-Players with lower accuracy in making effective shots should work on that aspect and enhance their scoring ability, since it’s always pitiful to make a shot against all opponents but miss it.
+Players with lower accuracy in making effective shots should work on that aspect and enhance their scoring ability, since it is always pitiful to make a shot against all opponents but miss it. Therefore, before making any training plan or game strategy, it is necessary to look at their individual shooting ability.
 
     # A tibble: 5 x 4
       name           total  made perc_made
@@ -74,7 +74,7 @@ Then I want to take a closer look at their different performance for different s
     4 Klay Thompson    640   329      51.4
     5 Draymond Green   346   171      49.4
 
-To be more specific, in terms of 2-point shooting, Iguodala and Durant are far ahead of their counterparts in making scores, although Iguodala had the least 2-point shots. So if there is anything else to work with, maybe Iguodala should try to find more scoring chance under the premise that he has already fulfilled his duties for his position, or other teammates can pass the ball to him to score the 2-point if possible.
+To be more specific, in terms of 2-point shooting, Iguodala and Durant are far ahead of their counterparts in making scores, although Iguodala had the least 2-point shots. So if there is anything else to work with, maybe Iguodala should try to find more scoring chance under the premise that he has already fulfilled his duties for his position, or other teammates can pass the ball to him to score the 2-point if possible. While Stephen Curry and Klay Thompson are on the middle level in the team.
 
     # A tibble: 5 x 4
       name           total  made perc_made
@@ -85,7 +85,7 @@ To be more specific, in terms of 2-point shooting, Iguodala and Durant are far a
     4 Andre Iguodala   161    58      36.0
     5 Draymond Green   232    74      31.9
 
-Here comes the most valuable score, 3-point goals, which is expected to have lower accuracy for all players on average, taking the degree of difficulty into account. Admirably, Thompson and Curry got the first two places both in number of shots and percentage of success, which is a good illustration that they have fulfilled their duties as point guard and shooting guard. Green has noticeable weakness in making effective scores, probably because he is a power forward whose main duty is to defend against opponents. Maybe sometimes he took a shot, not aiming to score but to pass the ball to his teammates. Otherwise, it is advisable that he work on both the skills of defense and scoring to reduce mistakes, or he is suggested to pass the ball to more skilled teammates if the situation permits.
+Here comes the most valuable score, 3-point goals, which is expected to have lower accuracy for all players on average, taking the degree of difficulty into account. Admirably, Thompson and Curry got the first two places both in number of shots and percentage of success, which is a good illustration that they have fulfilled their duties as point guard and shooting guard. Green has noticeable weakness in making effective scores, probably because he is a power forward whose main duty is to defend against opponents. Maybe sometimes he took a shot, not aiming to score but to pass the ball to his teammates. Otherwise, it is advisable that he work on both the skills of defense and scoring to reduce mistakes, or he is suggested to pass the ball to teammates that are more skilled if the situation permits.
 
 Conclusion
 ----------
