@@ -45,13 +45,13 @@ From the table, it has clearly shown that about half of the 2-point field goals 
 
 
 ### Contribution of players
-Now, to be more accurate in terms of making training schedules for the players, first I want to show you a rough idea of shots by each player in the following vivid chart which has a background picture of an NBA court.
+Now, to be more accurate in terms of making training schedules for the players, first I want to show you a rough idea of shots by each player in the following vivid chart which has a background picture of an NBA court, with the red points representing ineffective shots, and green ones meaning successful scores.
 ```{r out.width='80%', echo=FALSE, fig.align='center'}
 knitr::include_graphics(gsw_shot_charts)
 
 
 ```
-Obviously, Kevin Durant, Klay Thompson and Stephen Curry have the most colored points, which indicates that they attempted the most shots. Nevertheless, making shots alone does not entail winning scores, so it is more informative to look at their contribution to effective shots of the whole team.
+Obviously, Kevin Durant, Klay Thompson and Stephen Curry have the most colored points, which indicates that they attempted the most shots. Moreover, Andre Iguodala and Draymond Green, whose main job is to defend, made relatively fewer shots. Nevertheless, making shots alone does not entail winning scores, so it is more informative to look at their contribution to effective shots of the whole team.
 
 
 ```{r  echo=FALSE, comment='' }
@@ -68,7 +68,7 @@ arrange(summarise(
 
 
 ```
-From the table, we can see that of the 2091 effective shots, Stephen Curry and Klay Thompson contribute more than half to the whole team, which is in line with the fact that they are the point guard and shooting guard. However, as a shooting guard (or small forward sometimes), Andre Iguodala may have more room for improvement in finding chances to make effective shots. But we need more data about the accuracy of shooting to make better judgements about his ability of shooting accurately.
+From the table, we can see that of the 2091 effective shots, Stephen Curry and Klay Thompson contribute more than half to the whole team, which is in line with the fact that they are the point guard and shooting guard. However, as a shooting guard (or small forward sometimes), Andre Iguodala may have more room for improvement in finding chances to make effective shots. But we need more data about the accuracy of shooting to make better judgements about their ability of shooting accurately.
 
 
 ### Individual shooting performance	
