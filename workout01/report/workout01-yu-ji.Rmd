@@ -33,14 +33,17 @@ Data are shooting statistics of five players, Stephen Curry, Klay Thompson, Kevi
 #team general shooting statistics
 
 
-summarise(
+a = summarise(
           group_by(five_player, shot_type),
           made = sum(shot_made_flag == 'shot_yes'),
           total = sum(shot_made_flag!= 'NA'),
           perc_made = 100*made/total
           )
 
+knitr::kable(a)
+
 ```
+
 From the table, it has clearly shown that about half of the 2-point field goals are successful, and players score 40% of 3-point shots, which is easy to understand according to different level of difficulty for them. There is still room for improvement in accuracy of shooting for the whole team since the percentage of successful shooting is not that satisfactory and unbeatable. Maybe higher percentage of effectiveness can be achieved if the players practice more in shooting skills cooperate more closely and avoid interception from their rivals.
 
 
@@ -48,10 +51,11 @@ From the table, it has clearly shown that about half of the 2-point field goals 
 ### Contribution of players
 Now, to be more accurate in terms of making training schedules for the players, first I want to show you a rough idea of shots by each player in the following vivid chart which has a background picture of an NBA court, with the red points representing ineffective shots, and green ones meaning successful scores.
 ```{r out.width='80%', echo=FALSE, fig.align='center'}
-knitr::include_graphics(gsw_shot_charts)
+knitr::include_graphics('../images/gsw-shot-charts.png')
 
 
 ```
+
 Obviously, Kevin Durant, Klay Thompson and Stephen Curry have the most colored points, which indicates that they attempted the most shots. Moreover, Andre Iguodala and Draymond Green, whose main job is to defend, made relatively fewer shots. Nevertheless, making shots alone does not entail winning scores, so it is more informative to look at their contribution to effective shots of the whole team.
 
 
@@ -60,15 +64,17 @@ Obviously, Kevin Durant, Klay Thompson and Stephen Curry have the most colored p
 team_effective = sum(five_player$shot_made_flag == 'shot_yes')
 team_total = sum(five_player$shot_made_flag != 'NA')
 
-arrange(summarise(
+b = arrange(summarise(
           group_by(five_player, name),
           effective_shot = sum(shot_made_flag == 'shot_yes'),
           team_total = team_effective,
           perc_contribution = 100*effective_shot/team_effective
           ), desc(perc_contribution))
+knitr::kable(b)
 
 
 ```
+
 From the table, we can see that of the 2091 effective shots, Stephen Curry and Klay Thompson contribute more than half to the whole team, which is in line with the fact that they are the point guard and shooting guard. However, as a shooting guard (or small forward sometimes), Andre Iguodala may have more room for improvement in finding chances to make effective shots. But we need more data about the accuracy of shooting to make better judgements about their ability of shooting accurately.
 
 
@@ -80,14 +86,16 @@ Players with lower accuracy in making effective shots should work on that aspect
 
 #Effective Shooting % by Player
 
-arrange(summarise(
+c = arrange(summarise(
           group_by(five_player, name),
           total = sum(shot_made_flag == 'shot_yes'|shot_made_flag == 'shot_no'),
           made = sum((shot_made_flag == 'shot_yes'&shot_type == '3PT Field Goal')|(shot_made_flag == 'shot_yes'&shot_type == '2PT Field Goal')),
           perc_made = 100*made/total
           ), desc(perc_made))
+knitr::kable(c)
 
 ```
+
 So based on the table, regardless of the shot type, all of the five players got almost half in successful shots of their individual totals, although Draymond Green has way to go in improving shooting effectiveness. In addition, despite the fact that Thompson and Curry made the most effective shots over all for the team, their accuracy of shooting seemed to be poorer than Kevin Durant.
 
 
@@ -96,14 +104,16 @@ Then I want to take a closer look at their different performance for different s
 
 
 #2PT Effective Shooting % by Player 
-arrange(summarise(
+d = arrange(summarise(
           group_by(five_player, name),
           total = sum(shot_type == '2PT Field Goal'),
           made = sum(shot_made_flag == 'shot_yes'&shot_type == '2PT Field Goal'),
           perc_made = 100*made/total
           ), desc(perc_made))
+knitr::kable(d)
 
 ```
+
 
 To be more specific, in terms of 2-point shooting, Iguodala and Durant are far ahead of their counterparts in making scores, although Iguodala had the least 2-point shots. So if there is anything else to work with, maybe Iguodala should try to find more scoring chance under the premise that he has already fulfilled his duties for his position, or other teammates can pass the ball to him to score the 2-point if possible. While Stephen Curry and Klay Thompson are on the middle level in the team.
 
@@ -112,14 +122,16 @@ To be more specific, in terms of 2-point shooting, Iguodala and Durant are far a
 
 
 #3PT Effective Shooting % by Player
-arrange(summarise(
+e = arrange(summarise(
           group_by(five_player, name),
           total = sum(shot_type == '3PT Field Goal'),
           made = sum(shot_made_flag == 'shot_yes'&shot_type == '3PT Field Goal'),
           perc_made = 100*made/total
           ), desc(perc_made))
+knitr::kable(e)
 
 ```
+
 Here comes the most valuable score, 3-point goals, which is expected to have lower accuracy for all players on average, taking the degree of difficulty into account. Admirably, Thompson and Curry got the first two places both in number of shots and percentage of success, which is a good illustration that they have fulfilled their duties as point guard and shooting guard. Green has noticeable weakness in making effective scores, probably because he is a power forward whose main duty is to defend against opponents. Maybe sometimes he took a shot, not aiming to score but to pass the ball to his teammates. Otherwise, it is advisable that he work on both the skills of defense and scoring to reduce mistakes, or he is suggested to pass the ball to teammates that are more skilled if the situation permits.
 
 ## Conclusion
