@@ -15,7 +15,7 @@
   
   curry$name = 'Stephen Curry'
   durant$name = 'Kevin Durant'
-  green$name = 'Graymond Green'
+  green$name = 'Draymond Green'
   thompson$name = 'Klay Thompson'
   iguodala$name = 'Andre Iguodala'
   
