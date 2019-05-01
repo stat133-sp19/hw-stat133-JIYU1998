@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556682582106.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "733161146",
+    "id" : "534BE8BF",
+    "lastKnownWriteTime" : 1556682757,
+    "last_content_update" : 1556682757078,
+    "path" : "C:/Users/dell/Desktop/STAT133/LabsWarmups/binomial/R/bin_cumulative.R",
+    "project_path" : "R/bin_cumulative.R",
+    "properties" : {
+        "cursorPosition" : "28,8",
+        "scrollLine" : "18"
+    },
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

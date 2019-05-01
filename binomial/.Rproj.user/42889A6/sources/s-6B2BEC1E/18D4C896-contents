@@ -1,0 +1,13 @@
+# Titel: Check success
+# Description: check whether number of success is valid
+# Input
+#  trials: number of trials
+#  success: number of success
+# Output
+#  True or False
+check_success = function(success, trials) {
+  if(success>=0&success<=trials&success%%1==0&length(success>=0)) {
+    return(T)
+  } if(success>trials) {stop('success cannot be greater than trials')}
+  else {stop('invalid success value')}
+}

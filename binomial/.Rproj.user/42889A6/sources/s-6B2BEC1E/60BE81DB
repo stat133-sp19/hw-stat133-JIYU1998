@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556493007723.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "60BE81DB",
+    "lastKnownWriteTime" : 1556493677,
+    "last_content_update" : 1556493677274,
+    "path" : "C:/Users/dell/Desktop/STAT133/LabsWarmups/binomial/R/mode.R",
+    "project_path" : "R/mode.R",
+    "properties" : {
+        "cursorPosition" : "15,19",
+        "scrollLine" : "7",
+        "tempName" : "Untitled5"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

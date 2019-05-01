@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556489341590.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3372FA28",
+    "lastKnownWriteTime" : 1556493236,
+    "last_content_update" : 1556493236771,
+    "path" : "C:/Users/dell/Desktop/STAT133/LabsWarmups/binomial/R/check_probability.R",
+    "project_path" : "R/check_probability.R",
+    "properties" : {
+        "cursorPosition" : "0,26",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,11 @@
+# Title: mean
+# Description: calculate mean
+# Input
+#  trials: number of trials
+#  prob: probability of success
+# Output
+#  mean: mean of success
+aux_mean = function(prob, trials) {
+  mean = trials*prob
+  return(mean)
+}

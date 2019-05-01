@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556493013463.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "30AD6C50",
+    "lastKnownWriteTime" : 1556493059,
+    "last_content_update" : 1556493059407,
+    "path" : "C:/Users/dell/Desktop/STAT133/LabsWarmups/binomial/R/kurtosis.R",
+    "project_path" : "R/kurtosis.R",
+    "properties" : {
+        "cursorPosition" : "11,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled7"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

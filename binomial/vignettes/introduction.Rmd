@@ -1,0 +1,72 @@
+---
+title: "Getting Started with binomial"
+author: "YU JI"
+date: "2019.04.30"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to binomial}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+```{r }
+
+library(binomial)
+```
+
+## Binomial
+
+The package `"binomial"` provide a set of functions about caculating binomial probability, some statistics like mode, skewness and kurtosis, and display lists of probability or cumulative probability for given trials and probability of success.
+
+
+## Setting up binomial variables
+
+Use the function `bin_variable()`, and the generated type can be printed in a specific format; use function `summary()` to the generate virable to get some statistic summary in a clear and neat format:
+
+```{r}
+variables = bin_variable(trials = 2,prob = .5)
+variables
+summary(variables)
+```
+
+## Get statistic summary measures using functions `bin_variance()`, `bin_mean()`,`bin_mode()`,`bin_skewness()`,`bin_kurtosis()`,
+
+```{r}
+bin_variance(trials = 2,prob = .5)
+bin_mean(trials = 2,prob = .5)
+bin_mode(trials = 2,prob = .5)
+bin_skewness(trials = 2,prob = .5)
+bin_kurtosis(trials = 2,prob = .5)
+```
+
+
+## Calculate how many possible outcomes there are for given binomial variables
+
+Use function `bin_choose()` to calculate possible outcomes of given number of trials, success:
+
+```{r}
+bin_choose(n = 5, k = 2)
+```
+
+## Getting binomial distribution and probabilities:
+
+Use function `bin_prbability()` to get the probability of desired times of successes given total trials and probability of success
+
+```{r}
+bin_probability(1,2,.5)
+```
+
+Use `bin_distribution()` to get a dataframe of the probability of all number of successes and use `plot()` to visualize it:
+```{r}
+dis = bin_distribution(2,.5)
+dis
+plot(dis)
+```
+
+
+Use `bin_cumulative()` to get the cumulative probability of getting all possible number of success and use `plot()` to visualize it:
+```{r}
+cum = bin_cumulative(2,.5)
+cum
+plot(cum)
+```
+

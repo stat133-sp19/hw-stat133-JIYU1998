@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556492977380.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "18D4C896",
+    "lastKnownWriteTime" : 1556493183,
+    "last_content_update" : 1556493183479,
+    "path" : "C:/Users/dell/Desktop/STAT133/LabsWarmups/binomial/R/check_success.R",
+    "project_path" : "R/check_success.R",
+    "properties" : {
+        "cursorPosition" : "0,22",
+        "scrollLine" : "0",
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

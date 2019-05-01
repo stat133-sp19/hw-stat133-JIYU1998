@@ -1,0 +1,62 @@
+---
+output:
+  github_document:
+    html_preview: false
+---
+
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+
+## Overview
+
+`"binomial"` is a package that provides functions to cope with binomial distribution.
+
+* `bin_variable()` shows a list of binomial variables (of class `"binvar"`)
+* `bin_choose()` calculate the number of possible outcomes given binomial variables
+* `bin_mean()` `bin_mode()`, etc. calculate the summary statistics of given binomial experiment
+* `bin_probability()` calculate probability of a specific number of success
+* `bin_distribution()` show a dataframe of probability distribution(of class `"bindis"`)
+* `plot()` method for a `"bindis"` object to graph probability distribution
+* `bin_cumulative()` show a dataframe of cumulative probability (of class `"bincum"`)
+* `plot()` method for a `"bincum"` object to graph cumulative probability 
+
+
+## Motivation
+
+This package has been developed to make binomial operations easier.
+
+
+## Usage
+
+```{r}
+library(binomial)
+#set up binomial variables and get summary statistics
+variables = bin_variable(trials = 2,prob = .5)
+variables
+summary(variables)
+# calculate specific statistic measurement
+bin_variance(trials = 2,prob = .5)
+bin_mean(trials = 2,prob = .5)
+bin_mode(trials = 2,prob = .5)
+bin_skewness(trials = 2,prob = .5)
+bin_kurtosis(trials = 2,prob = .5)
+#calculate number of possibile outcomes
+bin_choose(n = 5, k = 2)
+#calculate probability of getting a specific number of success
+bin_probability(1,2,.5)
+# given trilas and probability, show probability distribution and its plot
+dis = bin_distribution(2,.5)
+dis
+plot(dis)
+# given trilas and probability, show cumulative probability and its plot
+cum = bin_cumulative(2,.5)
+cum
+plot(cum)
+```

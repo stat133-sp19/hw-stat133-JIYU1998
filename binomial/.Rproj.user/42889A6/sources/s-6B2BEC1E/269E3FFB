@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556493010269.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "269E3FFB",
+    "lastKnownWriteTime" : 1556493089,
+    "last_content_update" : 1556493089516,
+    "path" : "C:/Users/dell/Desktop/STAT133/LabsWarmups/binomial/R/skewness.R",
+    "project_path" : "R/skewness.R",
+    "properties" : {
+        "cursorPosition" : "1,9",
+        "scrollLine" : "0",
+        "tempName" : "Untitled6"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,11 @@
+# Title: Check trials
+# Description: check whether number of trials is valid
+# Input
+#  trials: number of trials
+# Output
+#  True or False
+check_trials = function(trials) {
+  if(trials%%1==0&trials>=0){
+    return(T)
+  }else {stop('invalid trials value')}
+}
