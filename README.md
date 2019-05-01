@@ -13,8 +13,8 @@ Private Repository for HW assignments of Stat 133 (Spring 2019)
 ## Assignments
 
 - [Demo](demo)
-- [Workout 1](workout1)
+- [Workout 1](https://github.com/stat133-sp19/hw-stat133-JIYU1998/tree/master/workout01)
 - [Workout 2](https://github.com/stat133-sp19/hw-stat133-JIYU1998/tree/master/workout2)
-- Workout 3
+- [Workout 3](https://github.com/stat133-sp19/hw-stat133-JIYU1998/tree/master/binomial)
 
 
